@@ -16,11 +16,12 @@ package authn
 
 import (
 	"context"
-	"github.com/greenpau/caddy-auth-portal/pkg/enums/operator"
-	"github.com/greenpau/go-identity/pkg/requests"
-	"go.uber.org/zap"
 	"net/http"
 	"strings"
+
+	"github.com/greenpau/go-identity/pkg/requests"
+	"github.com/silvajp2/caddy-auth-portal/pkg/enums/operator"
+	"go.uber.org/zap"
 )
 
 func (p *Authenticator) handleHTTPExternalLogin(ctx context.Context, w http.ResponseWriter, r *http.Request, rr *requests.Request, authMethod string) error {

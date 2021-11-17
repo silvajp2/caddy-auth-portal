@@ -16,21 +16,22 @@ package authn
 
 import (
 	"context"
+	"path"
+	"strings"
+
 	"github.com/greenpau/caddy-authorize/pkg/acl"
 	"github.com/greenpau/caddy-authorize/pkg/kms"
 	"github.com/greenpau/caddy-authorize/pkg/options"
 	"github.com/greenpau/caddy-authorize/pkg/validator"
-	"github.com/greenpau/caddy-auth-portal/pkg/backends"
-	"github.com/greenpau/caddy-auth-portal/pkg/cache"
-	"github.com/greenpau/caddy-auth-portal/pkg/cookie"
-	"github.com/greenpau/caddy-auth-portal/pkg/errors"
-	"github.com/greenpau/caddy-auth-portal/pkg/registration"
-	"github.com/greenpau/caddy-auth-portal/pkg/transformer"
-	"github.com/greenpau/caddy-auth-portal/pkg/ui"
 	"github.com/greenpau/go-identity"
+	"github.com/silvajp2/caddy-auth-portal/pkg/backends"
+	"github.com/silvajp2/caddy-auth-portal/pkg/cache"
+	"github.com/silvajp2/caddy-auth-portal/pkg/cookie"
+	"github.com/silvajp2/caddy-auth-portal/pkg/errors"
+	"github.com/silvajp2/caddy-auth-portal/pkg/registration"
+	"github.com/silvajp2/caddy-auth-portal/pkg/transformer"
+	"github.com/silvajp2/caddy-auth-portal/pkg/ui"
 	"go.uber.org/zap"
-	"path"
-	"strings"
 )
 
 func (mgr *InstanceManager) configure(p, m *Authenticator) error {

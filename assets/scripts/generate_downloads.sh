@@ -11,7 +11,7 @@ _TARGET_OS[${#_TARGET_OS[@]}]="linux"
 _TARGET_OS[${#_TARGET_OS[@]}]="windows"
 _TARGET_ARCH[${#_TARGET_ARCH[@]}]="amd64"
 
-P1="github.com/greenpau/caddy-auth-portal"
+P1="github.com/silvajp2/caddy-auth-portal"
 P2="github.com/greenpau/caddy-authorize"
 P3="github.com/greenpau/caddy-trace"
 

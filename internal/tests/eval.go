@@ -25,7 +25,7 @@ import (
 )
 
 var (
-	pr = regexp.MustCompile(".*(github.com/greenpau/caddy-auth-portal/.*)$")
+	pr = regexp.MustCompile(".*(github.com/silvajp2/caddy-auth-portal/.*)$")
 )
 
 // EvalErr evaluates whether there is an error. If there is, was it the

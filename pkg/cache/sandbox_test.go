@@ -21,8 +21,8 @@ import (
 	"testing"
 	// "time"
 
-	"github.com/greenpau/caddy-auth-portal/internal/tests"
-	"github.com/greenpau/caddy-auth-portal/pkg/utils"
+	"github.com/silvajp2/caddy-auth-portal/internal/tests"
+	"github.com/silvajp2/caddy-auth-portal/pkg/utils"
 )
 
 func TestParseSandboxID(t *testing.T) {

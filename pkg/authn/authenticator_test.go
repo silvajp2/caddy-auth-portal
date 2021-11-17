@@ -16,12 +16,13 @@ package authn
 
 import (
 	"fmt"
-	"github.com/greenpau/caddy-auth-portal/internal/tests"
-	"github.com/greenpau/caddy-auth-portal/pkg/backends"
-	"github.com/greenpau/caddy-auth-portal/pkg/backends/local"
-	"github.com/greenpau/caddy-auth-portal/pkg/errors"
+
 	"github.com/greenpau/caddy-authorize/pkg/acl"
 	logutils "github.com/greenpau/caddy-authorize/pkg/utils/log"
+	"github.com/silvajp2/caddy-auth-portal/internal/tests"
+	"github.com/silvajp2/caddy-auth-portal/pkg/backends"
+	"github.com/silvajp2/caddy-auth-portal/pkg/backends/local"
+	"github.com/silvajp2/caddy-auth-portal/pkg/errors"
 
 	"testing"
 )

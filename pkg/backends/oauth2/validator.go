@@ -16,7 +16,7 @@ package oauth2
 
 import (
 	jwtlib "github.com/golang-jwt/jwt/v4"
-	"github.com/greenpau/caddy-auth-portal/pkg/errors"
+	"github.com/silvajp2/caddy-auth-portal/pkg/errors"
 )
 
 var (

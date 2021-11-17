@@ -18,13 +18,14 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"github.com/greenpau/caddy-authorize/pkg/user"
-	"github.com/greenpau/caddy-auth-portal/pkg/backends"
-	"github.com/greenpau/caddy-auth-portal/pkg/enums/operator"
-	"github.com/greenpau/go-identity"
-	"github.com/greenpau/go-identity/pkg/requests"
 	"net/http"
 	"strings"
+
+	"github.com/greenpau/caddy-authorize/pkg/user"
+	"github.com/greenpau/go-identity"
+	"github.com/greenpau/go-identity/pkg/requests"
+	"github.com/silvajp2/caddy-auth-portal/pkg/backends"
+	"github.com/silvajp2/caddy-auth-portal/pkg/enums/operator"
 )
 
 func (p *Authenticator) handleHTTPGPGKeysSettings(

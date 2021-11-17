@@ -16,19 +16,21 @@ package backends
 
 import (
 	"fmt"
-	"github.com/greenpau/caddy-auth-portal/pkg/backends/ldap"
-	"github.com/greenpau/caddy-auth-portal/pkg/backends/local"
-	"github.com/greenpau/caddy-auth-portal/pkg/backends/oauth2"
-	"github.com/greenpau/caddy-auth-portal/pkg/backends/saml"
-	"github.com/greenpau/caddy-auth-portal/pkg/enums/operator"
-	"github.com/greenpau/caddy-auth-portal/pkg/errors"
-	"github.com/greenpau/go-identity/pkg/requests"
 	"strings"
 
-	"github.com/greenpau/caddy-auth-portal/internal/tests"
-	logutils "github.com/greenpau/caddy-authorize/pkg/utils/log"
-	"go.uber.org/zap"
+	"github.com/greenpau/go-identity/pkg/requests"
+	"github.com/silvajp2/caddy-auth-portal/pkg/backends/ldap"
+	"github.com/silvajp2/caddy-auth-portal/pkg/backends/local"
+	"github.com/silvajp2/caddy-auth-portal/pkg/backends/oauth2"
+	"github.com/silvajp2/caddy-auth-portal/pkg/backends/saml"
+	"github.com/silvajp2/caddy-auth-portal/pkg/enums/operator"
+	"github.com/silvajp2/caddy-auth-portal/pkg/errors"
+
 	"testing"
+
+	logutils "github.com/greenpau/caddy-authorize/pkg/utils/log"
+	"github.com/silvajp2/caddy-auth-portal/internal/tests"
+	"go.uber.org/zap"
 )
 
 func TestBackendConfig(t *testing.T) {

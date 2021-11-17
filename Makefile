@@ -21,7 +21,7 @@ build: info templates license
 	@rm -rf ../xcaddy-$(PLUGIN_NAME)/*
 	@mkdir -p ../xcaddy-$(PLUGIN_NAME) && cd ../xcaddy-$(PLUGIN_NAME) && \
 		xcaddy build $(CADDY_VERSION) --output ../$(PLUGIN_NAME)/bin/caddy \
-		--with github.com/greenpau/caddy-auth-portal@$(LATEST_GIT_COMMIT)=$(BUILD_DIR) \
+		--with github.com/silvajp2/caddy-auth-portal@$(LATEST_GIT_COMMIT)=$(BUILD_DIR) \
 		--with github.com/greenpau/caddy-authorize@latest=$(BUILD_DIR)/../caddy-authorize \
 		--with github.com/greenpau/go-identity@latest=$(BUILD_DIR)/../go-identity \
 		--with github.com/greenpau/caddy-trace@latest=$(BUILD_DIR)/../caddy-trace

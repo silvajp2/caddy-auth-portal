@@ -16,9 +16,11 @@ package authn
 
 import (
 	"context"
-	"github.com/greenpau/caddy-auth-portal/pkg/ui"
-	"github.com/greenpau/go-identity/pkg/requests"
 	"io"
+
+	"github.com/greenpau/go-identity/pkg/requests"
+	"github.com/silvajp2/caddy-auth-portal/pkg/ui"
+
 	// "go.uber.org/zap"
 	"net/http"
 	"path"

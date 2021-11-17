@@ -16,7 +16,7 @@ package transformer
 
 import (
 	"fmt"
-	"github.com/greenpau/caddy-auth-portal/internal/tests"
+	"github.com/silvajp2/caddy-auth-portal/internal/tests"
 	"testing"
 )
 

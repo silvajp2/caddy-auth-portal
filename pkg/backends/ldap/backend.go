@@ -16,13 +16,14 @@ package ldap
 
 import (
 	"fmt"
-	"github.com/greenpau/caddy-auth-portal/pkg/enums/operator"
-	"github.com/greenpau/caddy-auth-portal/pkg/errors"
-	"github.com/greenpau/go-identity/pkg/requests"
-	"go.uber.org/zap"
 	"net/url"
 	"regexp"
 	"strings"
+
+	"github.com/greenpau/go-identity/pkg/requests"
+	"github.com/silvajp2/caddy-auth-portal/pkg/enums/operator"
+	"github.com/silvajp2/caddy-auth-portal/pkg/errors"
+	"go.uber.org/zap"
 )
 
 var (

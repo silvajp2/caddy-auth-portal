@@ -27,10 +27,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/greenpau/caddy-auth-portal/pkg/errors"
-	"github.com/greenpau/caddy-auth-portal/pkg/utils"
 	"github.com/greenpau/go-identity/pkg/requests"
 	uuid "github.com/satori/go.uuid"
+	"github.com/silvajp2/caddy-auth-portal/pkg/errors"
+	"github.com/silvajp2/caddy-auth-portal/pkg/utils"
 	"go.uber.org/zap"
 )
 

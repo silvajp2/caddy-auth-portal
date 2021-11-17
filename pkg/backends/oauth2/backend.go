@@ -17,13 +17,15 @@ package oauth2
 import (
 	"crypto/rsa"
 	"regexp"
+
 	//"encoding/base64"
 
-	"github.com/greenpau/caddy-auth-portal/pkg/enums/operator"
-	"github.com/greenpau/caddy-auth-portal/pkg/errors"
-	"github.com/greenpau/go-identity/pkg/requests"
-	"go.uber.org/zap"
 	"time"
+
+	"github.com/greenpau/go-identity/pkg/requests"
+	"github.com/silvajp2/caddy-auth-portal/pkg/enums/operator"
+	"github.com/silvajp2/caddy-auth-portal/pkg/errors"
+	"go.uber.org/zap"
 )
 
 // Backend represents authentication provider with OAuth 2.0 backend.

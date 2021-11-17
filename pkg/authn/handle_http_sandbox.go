@@ -18,16 +18,19 @@ import (
 	"context"
 	// "encoding/json"
 	"fmt"
+	"net/http"
+
 	"github.com/greenpau/caddy-authorize/pkg/user"
-	"github.com/greenpau/caddy-auth-portal/pkg/enums/operator"
-	"github.com/greenpau/caddy-auth-portal/pkg/utils"
 	"github.com/greenpau/go-identity"
 	"github.com/greenpau/go-identity/pkg/qr"
 	"github.com/greenpau/go-identity/pkg/requests"
-	"net/http"
+	"github.com/silvajp2/caddy-auth-portal/pkg/enums/operator"
+	"github.com/silvajp2/caddy-auth-portal/pkg/utils"
+
 	// "time"
-	"go.uber.org/zap"
 	"strings"
+
+	"go.uber.org/zap"
 )
 
 func (p *Authenticator) handleHTTPSandbox(ctx context.Context, w http.ResponseWriter, r *http.Request, rr *requests.Request) error {

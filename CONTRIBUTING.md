@@ -49,7 +49,7 @@ cd ~/tmpcaddydev
 Second, fork the following repositories in Github into to your own Github
 handle, e.g. `anonymous`:
 
-* `https://github.com/greenpau/caddy-auth-portal` => `https://github.com/anonymous/caddy-auth-portal`
+* `https://github.com/silvajp2/caddy-auth-portal` => `https://github.com/anonymous/caddy-auth-portal`
 * `https://github.com/greenpau/caddy-authorize` => `https://github.com/anonymous/caddy-authorize`
 * `https://github.com/greenpau/caddy-trace` => `https://github.com/anonymous/caddy-trace`
 * `https://github.com/greenpau/go-identity` => `https://github.com/anonymous/go-identity`
@@ -71,12 +71,12 @@ cd caddy-auth-portal
 make dep
 ```
 
-Next, modify `go.mod` in `github.com/greenpau/caddy-auth-portal`. Include
+Next, modify `go.mod` in `github.com/silvajp2/caddy-auth-portal`. Include
 `replace` directives to instruct `go` using local directories, as opposed
 to follow Github versions.
 
 ```
-module github.com/greenpau/caddy-auth-portal
+module github.com/silvajp2/caddy-auth-portal
 
 # intentionally omitted
 

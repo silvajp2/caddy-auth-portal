@@ -16,16 +16,19 @@ package ldap
 
 import (
 	"fmt"
-	"github.com/greenpau/caddy-auth-portal/pkg/enums/operator"
-	// "github.com/greenpau/caddy-auth-portal/pkg/errors"
+
+	"github.com/silvajp2/caddy-auth-portal/pkg/enums/operator"
+
+	// "github.com/silvajp2/caddy-auth-portal/pkg/errors"
 	"github.com/greenpau/go-identity/pkg/requests"
 	// "path"
 	// "path/filepath"
 	"strings"
 
-	"github.com/greenpau/caddy-auth-portal/internal/tests"
-	logutils "github.com/greenpau/caddy-authorize/pkg/utils/log"
 	"testing"
+
+	logutils "github.com/greenpau/caddy-authorize/pkg/utils/log"
+	"github.com/silvajp2/caddy-auth-portal/internal/tests"
 )
 
 func TestBackend(t *testing.T) {

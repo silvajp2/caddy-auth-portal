@@ -16,15 +16,16 @@ package authn
 
 import (
 	"context"
-	"github.com/greenpau/caddy-auth-portal/pkg/utils"
-	"github.com/greenpau/caddy-authorize/pkg/user"
-	addrutils "github.com/greenpau/caddy-authorize/pkg/utils/addr"
-	"github.com/greenpau/go-identity/pkg/requests"
-	"go.uber.org/zap"
 	"net/http"
 	"net/url"
 	"path"
 	"strings"
+
+	"github.com/greenpau/caddy-authorize/pkg/user"
+	addrutils "github.com/greenpau/caddy-authorize/pkg/utils/addr"
+	"github.com/greenpau/go-identity/pkg/requests"
+	"github.com/silvajp2/caddy-auth-portal/pkg/utils"
+	"go.uber.org/zap"
 )
 
 func (p *Authenticator) handleHTTP(ctx context.Context, w http.ResponseWriter, r *http.Request, rr *requests.Request) error {

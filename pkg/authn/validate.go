@@ -15,7 +15,7 @@
 package authn
 
 import (
-	"github.com/greenpau/caddy-auth-portal/pkg/errors"
+	"github.com/silvajp2/caddy-auth-portal/pkg/errors"
 	"go.uber.org/zap"
 )
 
