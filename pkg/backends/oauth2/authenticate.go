@@ -129,7 +129,7 @@ func (b *Backend) Authenticate(r *requests.Request) error {
 			switch b.Config.Provider {
 			case "google":
 				if b.Config.ScopeExists(
-					"https://www.googleapis.com/auth/groups",
+					"https://www.googleapis.com/auth/cloud-identity.groups.readonly",
 				) {
 					if err := b.fetchUserGroups(accessToken, m); err != nil {
 						return errors.ErrBackendOauthFetchUserGroupsFailed.WithArgs(err)
