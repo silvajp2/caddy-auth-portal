@@ -18,6 +18,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
+
 	// "regexp"
 	"strconv"
 	"strings"
@@ -26,12 +27,12 @@ import (
 	"github.com/greenpau/caddy-authorize/pkg/options"
 
 	"github.com/greenpau/caddy-auth-portal/pkg/authn"
-	"github.com/greenpau/caddy-auth-portal/pkg/backends"
 	"github.com/greenpau/caddy-auth-portal/pkg/cookie"
 	"github.com/greenpau/caddy-auth-portal/pkg/registration"
 	"github.com/greenpau/caddy-auth-portal/pkg/transformer"
 	"github.com/greenpau/caddy-auth-portal/pkg/ui"
 	cfgutils "github.com/greenpau/caddy-authorize/pkg/utils/cfg"
+	"github.com/silvajp2/caddy-auth-portal/pkg/backends"
 
 	"github.com/caddyserver/caddy/v2"
 	"github.com/caddyserver/caddy/v2/caddyconfig"
